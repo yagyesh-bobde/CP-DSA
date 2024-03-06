@@ -9,11 +9,8 @@ int main() {
 
     string ans;
 
-    for (int i = s.size() - 1; i >= 0; i--) {
-        ans += s[i];
-    }
+    for
     
-    cout<<ans<<endl;
     
     return 0;
 }
