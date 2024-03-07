@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include <unordered_set>
 
 using namespace std;
 int main() {
@@ -10,18 +11,17 @@ int main() {
         string str;
         cin >> str;
         int flag = 0;
-        const int MAX_CHAR = 256;
-        int charCount[MAX_CHAR] = {0};
+        unordered_set<char> charSet;
 
         for (char ch : str)
         {
-            charCount[ch]++;
-            if (charCount[ch] > 1)
+            if (charSet.count(ch) > 0)
             {
                 cout << ch << endl;
                 flag=1;
                 break;
             }
+            charSet.insert(ch);
         }
 
         if (flag == 0)
