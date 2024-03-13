@@ -14,7 +14,7 @@ int main()
 
     // alternate way to print array
 
-    int alternate = 1, temp;
+    int  temp;
 
     // upper triangle
     for (int i = 0; i < n; i++)
