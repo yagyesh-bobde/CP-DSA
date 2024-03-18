@@ -32,8 +32,8 @@ int main()
     // printing array
     while(loop){
         // right
-        int temp = n - 1; // upward
         int times = 0;
+        int temp = n - 1 - times; // upward
 
         for (i = times; i <= temp; i++)
         {
@@ -41,18 +41,17 @@ int main()
         }
 
         // downward
-        for ( int j = 0 ; j < temp; j++)
+        for ( int j =  0 + times ; j < temp; j++)
         {
             cout << arr[n - 1 - loop + j ][temp] << " ";
         }
 
         // backward
-        for (int j = temp-1 ; j >= 0; j--)
+        for (int j = temp-1 ; j >= 0 + times; j--)
         {
             cout << arr[temp][j] << " ";
         }
 
-        
 
         for (int j = temp -1 ; j > times; j--)
         {

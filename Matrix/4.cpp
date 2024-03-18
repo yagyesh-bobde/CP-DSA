@@ -12,7 +12,6 @@ int main()
                      {9, 10, 11, 12},
                      {13, 14, 15, 16}};
 
-    // alternate way to print array
 
     int  temp;
 
